@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+input[type="button"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="button"]{
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+  cursor: pointer;
+}
+
+input[type="submit"],input[type="button"]:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+td.actions {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}

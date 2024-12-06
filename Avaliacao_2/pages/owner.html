@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cadastro de donos | Nicola</title>
+  </head>
+  <body>
+    <a href="/index.html">Voltar a pagina inicial</a>
+
+    <h1>Cadastro de donos</h1>
+
+    <!--Input do nome-->
+    <label for="iptName">Digite o nome do dono: <br /> </label>
+    <input id="iptName" type="text" placeholder="Nome do dono" />
+
+    <label for="iptPhone">Digite o nome numero de telefone: <br /> </label>
+    <input id="iptPhone" type="number" placeholder="(12)3456" />
+
+    <!--Botoes-->
+    <input id="btnRegister" type="button" value="Registrar" />
+    <input id="btnList" type="button" value="Listar" />
+
+    <!--Tabela para listar-->
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Numero de telefone</th>
+        </tr>
+      </thead>
+      <tbody id="tblOwner"></tbody>
+    </table>
+    <script src="/src/owner/ownerView.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cadastro de revistas | Nicola</title>
+  </head>
+  <body>
+    <a href="/index.html">Voltar a pagina inicial</a>
+
+    <h1>Cadastro de revistas</h1>
+
+    <!--Input do nome-->
+    <label for="iptTitle">Digite o titulo da obra: <br /> </label>
+    <input id="iptTitle" type="text" placeholder="Titulo" />
+    <br />
+    <br />
+    <label for="iptPageNumber">Digite o numero de paginas: <br /> </label>
+    <input id="iptPageNumber" type="text" placeholder="N paginas" />
+    <br />
+    <br />
+
+    <!--Select-->
+    <select id="selectOwner"></select>
+    <select id="selectAuthor" multiple></select>
+
+    <!--Botoes-->
+    <input id="btnRegister" type="button" value="Registrar" />
+    <input id="btnList" type="button" value="Listar" />
+
+    <!--Tabela para listar-->
+    <table>
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>N paginas</th>
+          <th>Dono</th>
+        </tr>
+      </thead>
+      <tbody id="tblMagazine"></tbody>
+    </table>
+    <script src="../src/magazine/magazineView.ts"></script>
+  </body>
+</html>
